@@ -1,0 +1,18 @@
+Screen:
+    name: 'main'
+    Label:
+        color: 'white'
+        text: '[b]Games Launcher[/b]'
+        markup: True
+        font_size: '64pt'
+        pos_hint: {'center_y': .55}
+    Button:
+        color: 'white'
+        text: 'Click to see the project on Github !'
+        size_hint: .70, .08
+        pos_hint: {'center_x': .5, 'center_y': .45}
+        background_color: 'black'
+        font_size: '20pt'
+        on_release:
+            import webbrowser
+            webbrowser.open('https://github.com/DiamondsBattle/GamesLauncher')
